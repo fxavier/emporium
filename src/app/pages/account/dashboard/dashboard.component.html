@@ -1,0 +1,51 @@
+<p class="text-muted">Alo, <b>Xavier Francisco!</b>
+Apartir da dashboard minha conta tem habilidade de ver snapshots das actividades recentes da sua conta e actualizar as informacoes. Selecione o link abaixo para ver or editar informacoes da sua conta.</p>
+
+<div fxLayout="row wrap" class="flex-wrapper">
+    <div fxFlex="33.3" fxFlex.sm="50" fxFlex.xs="100" class="col">
+        <mat-card class="p-0">
+          <mat-card-header class="p-1 account-card-title" fxLayoutAlign="space-between center">
+              <mat-card-title class="m-0"><h3>informacoes da conta</h3></mat-card-title>
+              <a mat-icon-button routerLink="/account/information"><mat-icon class="text-muted">editar</mat-icon></a>
+          </mat-card-header>
+          <div class="divider"></div>
+          <mat-card-content class="p-2 text-muted account-card-content">
+              <p>Xavier Francisco</p>
+              <p>xavier.francisco@gmail.com</p>
+              <p><a routerLink="/account/information" class="primary-text">Mudar password</a></p>
+          </mat-card-content>
+        </mat-card>
+    </div>
+    <div fxFlex="33.3" fxFlex.sm="50" fxFlex.xs="100" class="col">
+        <mat-card class="p-0">
+          <mat-card-header class="p-1 account-card-title" fxLayoutAlign="space-between center">
+              <mat-card-title class="m-0"><h3>Enderecos</h3></mat-card-title>
+              <a mat-icon-button routerLink="/account/addresses"><mat-icon class="text-muted">editar</mat-icon></a>
+          </mat-card-header>
+          <div class="divider"></div>
+          <mat-card-content class="p-2 text-muted account-card-content">
+            <p>Endereco de facturacao</p>
+            <p>Endereco de frete</p>
+          </mat-card-content>
+        </mat-card>
+    </div>
+    <div fxFlex="33.3" fxFlex.sm="100" fxFlex.xs="100" class="col">
+        <mat-card class="p-0">
+          <mat-card-header class="p-1 account-card-title" fxLayoutAlign="space-between center">
+              <mat-card-title class="m-0"><h3>Pedidos</h3></mat-card-title>
+              <a mat-icon-button routerLink="/account/orders"><mat-icon class="text-muted">editar</mat-icon></a>
+          </mat-card-header>
+          <div class="divider"></div>
+          <mat-card-content class="p-2 text-muted account-card-content">
+            <p class="">Completo</p>
+            <mat-progress-bar value="75" color="primary"></mat-progress-bar>
+            <p class="mt-1">Processando</p>
+            <mat-progress-bar value="25" color="accent"></mat-progress-bar>
+            <p class="mt-1">Em espera</p>
+            <mat-progress-bar value="65" color="warn"></mat-progress-bar>
+            <p class="mt-1">Devolvido</p>
+            <mat-progress-bar value="25" color="primary"></mat-progress-bar>
+          </mat-card-content>
+        </mat-card>
+    </div>
+</div>
