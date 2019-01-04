@@ -28,7 +28,7 @@
                     <mat-icon>menu</mat-icon>
                 </button> 
             </span>
-            <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"><mat-icon class="mat-icon-sm">call</mat-icon>  Linha Verde: (+258) 84 248 3635 </span>
+            <span fxShow="false" fxShow.gt-xs fxLayoutAlign="center center"><mat-icon class="mat-icon-sm">Ligue</mat-icon>  Linha Verde: (+258) 84 248 3635 </span>
             <span fxShow="false" fxShow.gt-sm>Bem vindo a nossa loja!</span>
             <app-top-menu></app-top-menu>       
         </mat-toolbar-row>
@@ -42,7 +42,7 @@
                             <app-category-list [categories]="categories" [categoryParentId]="0" (change)="changeCategory($event)"></app-category-list>
                         </span>
                     </mat-menu>
-                    <input type="text" placeholder="Type to search..." fxFlex>
+                    <input type="text" placeholder="Digita para pesquisar..." fxFlex>
                     <button mat-mini-fab (click)="search()" type="button" class="search-btn mat-elevation-z0 text-muted">
                         <mat-icon>pesquisar</mat-icon>
                     </button> 
@@ -72,7 +72,7 @@
                                 <b><a [routerLink]="['/cart']" class="text-muted">VER COMPRAS</a></b>
                             </div>
                             <div class="divider mt-1"></div>
-                            <div *ngIf="appService.Data.totalCartCount == 0" class="py-1 text-muted text-center">You have no items in your shopping cart.</div>
+                            <div *ngIf="appService.Data.totalCartCount == 0" class="py-1 text-muted text-center">O seu carrinho de compras esta vazio.</div>
                             <mat-list>
                                 <mat-list-item *ngFor="let product of appService.Data.cartList">                                   
                                     <h3 matLine class="text-muted"> {{product.name}} </h3>
@@ -81,7 +81,7 @@
                                     </p>
                                     <img  [src]="product.images[0].small" alt="image">
                                     <button mat-icon-button color="warn" class="remove" (click)="remove(product);stopClickPropagate($event)" matTooltip="Remove" matTooltipPosition="before">
-                                        <mat-icon class="mat-icon-sm">close</mat-icon>
+                                        <mat-icon class="mat-icon-sm">Fechar</mat-icon>
                                     </button>
                                 </mat-list-item>
                             </mat-list>

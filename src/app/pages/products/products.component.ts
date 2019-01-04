@@ -38,7 +38,7 @@ export class ProductsComponent implements OnInit {
     this.sub = this.activatedRoute.params.subscribe(params => {
       //console.log(params['name']);
     });
-    if(window.innerWidth < 960){
+    if (window.innerWidth < 960){
       this.sidenavOpen = false;
     };
     if(window.innerWidth < 1280){
@@ -47,7 +47,7 @@ export class ProductsComponent implements OnInit {
 
     this.getCategories();
     this.getBrands();
-    this.getAllProducts();   
+    this.getAllProducts();
   }
 
   public getAllProducts(){
