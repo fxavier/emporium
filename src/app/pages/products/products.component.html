@@ -20,8 +20,8 @@
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row" fxLayoutAlign="space-between center" class="text-muted">
-                    <span>De: <b>${{priceFrom}}</b></span>
-                    <span>Ate: <b>${{priceTo}}</b></span>
+                    <span>De: <b>MZN{{priceFrom}}</b></span>
+                    <span>Ate: <b>MZN{{priceTo}}</b></span>
                 </div>
                 <div fxLayout="row" fxLayoutAlign="space-between center" class="filter-price">
                     <mat-slider color="primary" max="2000" min="1" thumb-label="true" [(ngModel)]="priceFrom"></mat-slider>
@@ -67,7 +67,7 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Brands</h4>
+                        <h4>Marcas</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="filter-brands">                  
@@ -146,8 +146,8 @@
                     </a>
                     <div fxLayout="row" fxLayoutAlign="space-between center" class="prices">
                         <div fxLayout="column" fxLayoutAlign="center start">
-                            <p class="old-price text-muted"><span *ngIf="product.oldPrice">${{product.oldPrice | number : '1.2-2'}}</span></p>
-                            <p class="new-price">${{product.newPrice | number : '1.2-2'}}</p>
+                            <p class="old-price text-muted"><span *ngIf="product.oldPrice">MZN{{product.oldPrice | number : '1.2-2'}}</span></p>
+                            <p class="new-price">MZN{{product.newPrice | number : '1.2-2'}}</p>
                         </div>
                         <app-rating [ratingsCount]="product.ratingsCount" [ratingsValue]="product.ratingsValue" [direction]="'column'"></app-rating>
                     </div>                            
@@ -179,8 +179,8 @@
                             <p class="py-1 text-muted lh">{{product.description}}</p>
                             <div fxLayout="row" fxLayoutAlign="space-between center" class="prices">
                                 <div fxLayout="column" fxLayoutAlign="center start">
-                                    <p class="old-price text-muted"><span *ngIf="product.oldPrice">${{product.oldPrice | number : '1.2-2'}}</span></p>
-                                    <p class="new-price">${{product.newPrice | number : '1.2-2'}}</p>
+                                    <p class="old-price text-muted"><span *ngIf="product.oldPrice">{{product.oldPrice | number : '1.2-2'}}</span></p>
+                                    <p class="new-price">MZN{{product.newPrice | number : '1.2-2'}}</p>
                                 </div>
                                 <app-rating [ratingsCount]="product.ratingsCount" [ratingsValue]="product.ratingsValue" [direction]="'column'"></app-rating>
                             </div>                            

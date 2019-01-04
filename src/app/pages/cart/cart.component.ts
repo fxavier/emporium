@@ -54,9 +54,9 @@ export class CartComponent implements OnInit {
     if (index !== -1) {
       this.appService.Data.cartList.splice(index, 1);
       this.grandTotal = this.grandTotal - this.total[product.id]; 
-      this.appService.Data.totalPrice = this.grandTotal;       
+      this.appService.Data.totalPrice = this.grandTotal;
       this.total.forEach(val => {
-        if(val == this.total[product.id]){
+        if (val === this.total[product.id]){
           this.total[product.id] = 0;
         }
       });

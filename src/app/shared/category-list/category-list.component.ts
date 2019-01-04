@@ -14,17 +14,18 @@ export class CategoryListComponent {
 
   constructor() { }
 
+  // tslint:disable-next-line:use-life-cycle-interface
   public ngDoCheck() {
-    if(this.categories && !this.mainCategories) {
-      this.mainCategories = this.categories.filter(category => category.parentId == this.categoryParentId); 
+    if (this.categories && !this.mainCategories) {
+      this.mainCategories = this.categories.filter(category => category.parentId === this.categoryParentId); 
     }
   }
 
-  public stopClickPropagate(event: any){
-    if(window.innerWidth < 960){
+  public stopClickPropagate(event: any) {
+    if (window.innerWidth < 960) {
       event.stopPropagation();
       event.preventDefault();
-    }    
+    }
   }
 
   public changeCategory(event){

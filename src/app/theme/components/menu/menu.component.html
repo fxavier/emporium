@@ -4,38 +4,38 @@
     <mat-menu #menu="matMenu" [overlapTrigger]="false" class="mega-menu app-dropdown">
         <div fxLayout="row wrap">
             <div fxFlex="20" fxLayout="column" class="p-1"> 
-                <a mat-menu-item routerLink="/"><b>WOMEN</b></a>
+                <a mat-menu-item routerLink="/"><b>MULHERES</b></a>
                 <mat-divider></mat-divider> 
-                <a mat-menu-item routerLink="/">Dresses & Skirts</a>
-                <a mat-menu-item routerLink="/">Jackets</a>              
-                <a mat-menu-item routerLink="/">Tops & Blouses</a>
-                <a mat-menu-item routerLink="/">Shoes & Boots</a>
-                <a mat-menu-item routerLink="/">Knitwear</a>                
+                <a mat-menu-item routerLink="/">Vestidos e Saias</a>
+                <a mat-menu-item routerLink="/">Casacos</a>              
+                <a mat-menu-item routerLink="/">Tops e Blusas</a>
+                <a mat-menu-item routerLink="/">Sapatos e Botas</a>
+                               
             </div>
             <div fxFlex="20" class="p-1"> 
-                <a mat-menu-item routerLink="/"><b>MEN</b></a>
+                <a mat-menu-item routerLink="/"><b>HOMENS</b></a>
                 <mat-divider></mat-divider> 
-                <button mat-menu-item>T-shirts & Polos</button>
-                <button mat-menu-item>Shoes & Boots</button> 
+                <button mat-menu-item>T-shirts e Polos</button>
+                <button mat-menu-item>Sapatos e Botas</button> 
                 <button mat-menu-item>Jeans</button> 
-                <button mat-menu-item>Coats</button> 
+                <button mat-menu-item>Casacos</button> 
             </div>
             <div fxFlex="20" class="p-1"> 
-                <a mat-menu-item routerLink="/"><b>KIDS</b></a>
+                <a mat-menu-item routerLink="/"><b>CRIANÇAS</b></a>
                 <mat-divider></mat-divider> 
                 <button mat-menu-item>Top</button>
-                <button mat-menu-item>Pants & Shorts</button>
-                <button mat-menu-item>Dresses</button> 
-                <button mat-menu-item>Skirts</button> 
+                <button mat-menu-item>Calças e Calções</button>
+                <button mat-menu-item>VESTIDOS</button> 
+                <button mat-menu-item>Blusas</button> 
                 <button mat-menu-item>Set & Body</button> 
             </div>
             <div fxFlex="20" class="p-1"> 
-                <a mat-menu-item routerLink="/"><b>ACCESSORIES</b></a>
+                <a mat-menu-item routerLink="/"><b>ACCESSORIOS</b></a>
                 <mat-divider></mat-divider>                
-                <button mat-menu-item>Watches</button>  
-                <button mat-menu-item>Bags & Wallet</button>
-                <button mat-menu-item>Sunglasses</button> 
-                <button mat-menu-item>Belts & Hats</button> 
+                <button mat-menu-item>Relógios</button>  
+                <button mat-menu-item>Bolsas e Carteiras</button>
+                <button mat-menu-item>Oculos</button> 
+                <button mat-menu-item>Cintos e Chapéus</button> 
             </div>
             <div fxFlex="20" class="p-1"> 
                 <mat-card class="mega-menu-widget p-0">
@@ -50,19 +50,19 @@
            
     </mat-menu>
     
-    <a mat-button [routerLink]="['/products', 'jewellery']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Jewellery</a>
-    <a mat-button [routerLink]="['/products', 'electronics']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Electronics</a>
-    <a mat-button [routerLink]="['/products', 'sports']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Sports</a>
-    <a mat-button [routerLink]="['/products', 'motors']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Motors</a>
+    <a mat-button [routerLink]="['/products', 'jewellery']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Jóias</a>
+    <a mat-button [routerLink]="['/products', 'electronics']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Electronica</a>
+    <a mat-button [routerLink]="['/products', 'sports']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Desporto</a>
+    <a mat-button [routerLink]="['/products', 'motors']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Motores</a>
 
-    <a mat-button [matMenuTriggerFor]="animals">Pages<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+    <a mat-button [matMenuTriggerFor]="animals">Paginas<mat-icon class="caret">arrow_drop_down</mat-icon></a>
     <mat-menu #animals="matMenu" [overlapTrigger]="false" class="app-dropdown"> 
-        <a mat-menu-item routerLink="/products" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">All products</a> 
-        <a mat-menu-item [routerLink]="['/products', '2', 'PC All-in-One']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Product detail</a> 
-        <a mat-menu-item routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Contact</a>  
+        <a mat-menu-item routerLink="/products" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Todos os produtos</a> 
+        <a mat-menu-item [routerLink]="['/products', '2', 'PC All-in-One']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Detalhes do produto</a> 
+        <a mat-menu-item routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Contacto</a>  
         <a mat-menu-item routerLink="/sign-in">Entrar</a>       
-        <a mat-menu-item routerLink="/404">404 Error</a>
-        <a mat-menu-item [matMenuTriggerFor]="others">Others</a>
+        <a mat-menu-item routerLink="/404">404 Erro</a>
+        <a mat-menu-item [matMenuTriggerFor]="others">Outros</a>
     </mat-menu>
 
     <mat-menu #others="matMenu" class="app-dropdown">
@@ -72,7 +72,7 @@
         <a mat-menu-item>Menu item</a>
     </mat-menu>
     
-    <a mat-button routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Contact</a>
+    <a mat-button routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Contacto</a>
 
 </mat-toolbar>
 

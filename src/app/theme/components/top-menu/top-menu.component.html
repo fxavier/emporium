@@ -30,7 +30,7 @@
     </span>  
 
     <a mat-button [matMenuTriggerFor]="accountMenu" #accountMenuTrigger="matMenuTrigger">
-        <mat-icon class="mat-icon-sm account-icon">person</mat-icon> <span fxShow="false" fxShow.gt-sm>account</span> <mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
+        <mat-icon class="mat-icon-sm account-icon">person</mat-icon> <span fxShow="false" fxShow.gt-sm>conta</span> <mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
     </a>
     <mat-menu #accountMenu="matMenu" [overlapTrigger]="false" xPosition="before" class="app-dropdown account">
         <span (mouseleave)="accountMenuTrigger.closeMenu()">
@@ -40,8 +40,8 @@
             </div>
             <div class="divider"></div>
             <a mat-menu-item routerLink="/account"> 
-                <mat-icon class="mat-icon-sm">settings</mat-icon>
-                <span>Account Settings</span> 
+                <mat-icon class="mat-icon-sm">Definições</mat-icon>
+                <span>Definições da conta</span> 
             </a>
             <a mat-menu-item routerLink="/compare" fxHide="false" fxHide.gt-sm>
                 <mat-icon class="mat-icon-sm">compare</mat-icon>
@@ -53,11 +53,11 @@
             </a>
             <a mat-menu-item routerLink="/"> 
                 <mat-icon class="mat-icon-sm">lock</mat-icon>
-                <span>Lock screen</span> 
+                <span>Trancar a tela</span> 
             </a>
             <a mat-menu-item routerLink="/"> 
-                <mat-icon class="mat-icon-sm">help</mat-icon>
-                <span>Help</span> 
+                <mat-icon class="mat-icon-sm">ajuda</mat-icon>
+                <span>Ajuda</span> 
             </a>
             <div class="divider"></div>
             <a mat-menu-item routerLink="/sign-in"> 

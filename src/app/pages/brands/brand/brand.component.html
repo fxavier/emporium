@@ -5,7 +5,7 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Categories</h4>
+                        <h4>Categorias</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="categories-wrapper categories-dropdown" perfectScrollbar>
@@ -16,12 +16,12 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Price</h4>
+                        <h4>Preço</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row" fxLayoutAlign="space-between center" class="text-muted">
-                    <span>From: <b>${{priceFrom}}</b></span>
-                    <span>To: <b>${{priceTo}}</b></span>
+                    <span>De: <b>${{priceFrom}}</b></span>
+                    <span>Ate: <b>${{priceTo}}</b></span>
                 </div>
                 <div fxLayout="row" fxLayoutAlign="space-between center" class="filter-price">
                     <mat-slider color="primary" max="2000" min="1" thumb-label="true" [(ngModel)]="priceFrom"></mat-slider>
@@ -32,7 +32,7 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Color</h4>
+                        <h4>Cor</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="filter-buttons">
@@ -43,7 +43,7 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Size</h4>
+                        <h4>Tamanho</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row wrap" fxLayoutAlign="space-between center" class="filter-buttons">
@@ -54,20 +54,20 @@
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Condition</h4>
+                        <h4>Condição</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="column">
-                    <mat-checkbox color="primary">New</mat-checkbox>
-                    <mat-checkbox color="primary">Used</mat-checkbox>
-                    <mat-checkbox color="primary">Not Specified</mat-checkbox>
+                    <mat-checkbox color="primary">Novo</mat-checkbox>
+                    <mat-checkbox color="primary">Usado</mat-checkbox>
+                    <mat-checkbox color="primary">Não especificado</mat-checkbox>
                 </div>
             </mat-expansion-panel>
 
             <mat-expansion-panel expanded>
                 <mat-expansion-panel-header>
                     <mat-panel-title>
-                        <h4>Now starting at $1379</h4>
+                        <h4>Agora os Preços apartir de MZN1.379</h4>
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div fxLayout="row wrap" fxLayoutAlign="center center">
@@ -97,7 +97,7 @@
             </div>
             <div>
                 <a mat-button [matMenuTriggerFor]="countsMenu" #countsMenuTrigger="matMenuTrigger">
-                    Show {{count}}<mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
+                    Mostrar {{count}}<mat-icon class="mat-icon-sm caret">arrow_drop_down</mat-icon>
                 </a>
                 <mat-menu #countsMenu="matMenu" xPosition="before" class="app-dropdown" overlapTrigger="true">
                     <span (mouseleave)="countsMenuTrigger.closeMenu()">
@@ -134,7 +134,7 @@
                     <div fxLayout="row" fxLayoutAlign="space-between center" class="prices">
                         <div fxLayout="column" fxLayoutAlign="center start">
                             <p class="old-price text-muted"><span *ngIf="product.oldPrice">${{product.oldPrice | number : '1.2-2'}}</span></p>
-                            <p class="new-price">${{product.newPrice | number : '1.2-2'}}</p>
+                            <p class="new-price">MZN{{product.newPrice | number : '1.2-2'}}</p>
                         </div>
                         <app-rating [ratingsCount]="product.ratingsCount" [ratingsValue]="product.ratingsValue" [direction]="'column'"></app-rating>
                     </div>                            

@@ -5,7 +5,7 @@
         <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
             <mat-icon class="mat-icon-xlg text-muted m-0">card_giftcard</mat-icon>
             <div class="content">
-                <p>BONUS PLUS</p> 
+                <p>BONUS</p> 
                 <span class="text-muted m-0">Faz compras e colecione bonus</span>
             </div> 
         </mat-card> 
@@ -14,7 +14,7 @@
         <mat-card class="light-block" fxLayout="row"  fxLayoutAlign="start center">
             <mat-icon class="mat-icon-xlg text-muted m-0">local_shipping</mat-icon>
             <div class="content">
-                <p>FREE SHIPPING</p> 
+                <p>FRETE LIVRE</p> 
                 <span class="text-muted m-0">Frete livre para todos os produtos acima de MZN50.000,00</span>
             </div> 
         </mat-card>
@@ -45,16 +45,16 @@
 
     <mat-tab-group mat-stretch-tabs (selectedTabChange)="onLinkClick($event)">
        
-        <mat-tab label="Featured">           
+        <mat-tab label="Em destaque">           
            <app-products-carousel [products]="featuredProducts"></app-products-carousel>
         </mat-tab>
-        <mat-tab label="On Sale">
+        <mat-tab label="A venda">
            <app-products-carousel [products]="onSaleProducts"></app-products-carousel>
         </mat-tab>
-        <mat-tab label="Top Rated">
+        <mat-tab label="Mais votados">
             <app-products-carousel [products]="topRatedProducts"></app-products-carousel>
         </mat-tab>
-        <mat-tab label="New Arrivals">
+        <mat-tab label="Novos">
             <app-products-carousel [products]="newArrivalsProducts"></app-products-carousel>
         </mat-tab>
     </mat-tab-group> 
