@@ -6,10 +6,11 @@ import { Data, AppService } from '../../../app.service';
   templateUrl: './top-menu.component.html'
 })
 export class TopMenuComponent implements OnInit {
-  public currencies = ['USD', 'EUR'];
+  public currencies = ['USD', 'EUR', 'MZM'];
   public currency:any;
   public flags = [
     { name:'English', image: 'assets/images/flags/gb.svg' },
+    { name: 'Portugues', image: 'assets/images/flags/pt.svg'},
     { name:'German', image: 'assets/images/flags/de.svg' },
     { name:'French', image: 'assets/images/flags/fr.svg' },
     { name:'Russian', image: 'assets/images/flags/ru.svg' },
